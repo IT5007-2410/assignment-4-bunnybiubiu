@@ -1,3 +1,4 @@
+
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
@@ -7,25 +8,11 @@
  */
 
 import React from 'react';
-import IssueList from './IssueList.js';
-import type {Node} from 'react';
 import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
+  Text
 } from 'react-native';
+import IssueList from './IssueList.js';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
 
 
 
@@ -35,7 +22,7 @@ export default class App extends React.Component
   {
     return(
     <>
-      <Text>Issue Tracker</Text>
+            <Text style={{color:"cornflowerblue", padding:8, textAlign:"center",fontWeight:"bold", fontSize:16}}>Issue Tracker</Text>
       <IssueList/>
     </>);
 
